@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Youtube Channel
-Plugin URI: palyja.maxsol.id
+Plugin Name: Palyja Youtube Channel
+Plugin URI: https://github.com/wiratama/wp-youtube-channel
 Description: Get list of video from channel
 Version: 0.1
 Author: Arya Wiratama
@@ -11,9 +11,9 @@ License: GPLv2 or later
 
 add_action('init', function() {
 	
-	include dirname( __FILE__ ).'/include/functions.php';
-	include dirname( __FILE__ ).'/include/admin-menu-youtube.php';
-	include dirname( __FILE__ ).'/include/form-handler.php';
+	include dirname( __FILE__ ).'/include/youtube-functions.php';
+	include dirname( __FILE__ ).'/include/class-admin-menu-youtube.php';
+	include dirname( __FILE__ ).'/include/class-form-handler-youtube.php';
 
-	new admin_menu_twitter();
+	new Palyja_Youtube_Admin_Menu();
 });

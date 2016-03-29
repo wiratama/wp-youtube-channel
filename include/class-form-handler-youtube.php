@@ -1,5 +1,5 @@
 <?php
-class Form_Handler_Youtube {
+class Form_Handler_Palyja_Youtube {
 
     public function __construct() {
         add_action( 'admin_init', array( $this, 'handle_form' ) );
@@ -45,4 +45,4 @@ class Form_Handler_Youtube {
         $insert_id = insert_youtube_channel($params);
     }
 }
-new Form_Handler_Youtube();
+new Form_Handler_Palyja_Youtube();

@@ -7,11 +7,11 @@ function insert_youtube_channel( $params = array() )
         'youtube_channel_id'       => '',
     );
     $value = wp_parse_args( $params, $defaults );
-    $result =  get_option( 'youtube_channel' );
+    $result =  get_option( 'palyja_youtube_channel' );
 
     if ($result) {
-        update_option('youtube_channel',$value);
+        update_option('palyja_youtube_channel',$value);
     } else {
-        add_option( 'youtube_channel', $value);
+        add_option( 'palyja_youtube_channel', $value);
     }
 }
