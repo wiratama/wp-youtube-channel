@@ -1,8 +1,7 @@
 <?php 
-    $result =  get_option( 'palyja_youtube_channel' );
-    $youtube_api_key = ($result['youtube_api_key'] ? $result['youtube_api_key'] : '');
-    $youtube_channel_id = ($result['youtube_channel_id'] ? $result['youtube_channel_id'] : '');
-
+$result =  get_option( 'palyja_youtube_channel' );
+$youtube_api_key = ($result['youtube_api_key'] ? $result['youtube_api_key'] : '');
+$youtube_channel_id = ($result['youtube_channel_id'] ? $result['youtube_channel_id'] : '');
 ?> 
 
 <div class="wrap">
